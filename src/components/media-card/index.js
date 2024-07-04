@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./MediaCard.module.scss";
 import Link from "next/link";
 
 const MediaCard = ({ mediaId }) => {
