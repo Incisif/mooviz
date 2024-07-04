@@ -1,5 +1,6 @@
 import "./globals.css";
 import { roboto, montserrat } from "@/fonts";
+import Header from "@/components/header";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${roboto.variable} ${montserrat.variable} bg-gray-100`}>
         <div className="flex min-h-screen flex-col items-center">
+          <Header />
           <main>{children}</main>
         </div>
       </body>
