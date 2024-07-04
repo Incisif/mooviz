@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const MediaCard = ({ mediaId }) => {
+const MediaCard = ({ media }) => {
   return (
     <div className="w-full min-w-48 font-montserrat shadow-xl transition  duration-300 hover:shadow-2xl">
-      <Link href={`/movies/${mediaId}`}>
+      <Link href={`/movies/${media.id}`}>
         <div className="relative  aspect-[1/1.41] w-full overflow-hidden  bg-zinc-200">
-          <Image
-            src="https://image.tmdb.org/t/p/w500/hYQs5RPHiWctoYqvI8baHiIqdd8.jpg"
-            alt="media title"
-            fill
+        <Image
+            src={`${process.env.NEXT_PUBLIC_TMDB_IMAGE_BASE_PATH}/w500${media.poster_path}`}
+            alt={media.title}
+            style={{ objectFit: "cover" }}
+            fill="responsive"
           />
         </div>
         <div className="flex flex-col">
@@ -20,3 +21,5 @@ const MediaCard = ({ mediaId }) => {
     </div>
   );
 };
+
+export default MediaCard;
