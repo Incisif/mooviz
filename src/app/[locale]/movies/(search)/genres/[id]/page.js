@@ -2,7 +2,15 @@ import React from "react";
 import SearchResults from "@/components/search-results";
 
 const GenreIdPage = ({ params, searchParams }) => {
-  return <SearchResults searchParams={searchParams} genreId={params.id} />;
+  return (
+    <div>
+      <SearchResults
+        searchParams={searchParams}
+        genreId={params.id}
+        locale={params.locale}
+      />
+    </div>
+  );
 };
 
 export default GenreIdPage;
