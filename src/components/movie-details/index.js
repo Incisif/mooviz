@@ -6,8 +6,8 @@ import formatBudget from "@/utils/format-budget";
 import MovieCredits from "@/components/movie-credits";
 import { Suspense } from "react";
 import { getMovieByPath } from "@/utils/movieClient";
-import NoTrailerAvailable from "../NoTrailerAvailable/NoTrailerAvailable";
-import Similar from "../Similar/Similar";
+import NoTrailerAvailable from "@/components/no-trailer-available";
+import Similar from "@/components/similar";
 import { getDictionary } from "@/utils/dictionaries";
 
 const MovieDetails = async ({ movie, trailerKey, locale }) => {
