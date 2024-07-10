@@ -1,4 +1,4 @@
-import { getDictionary } from "@/utils/dictionaries";
+import { getDictionary } from "@/utils/dictionaries"
 
 const NoTrailerAvailable = async ({locale}) => {
 
