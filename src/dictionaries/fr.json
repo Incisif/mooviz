@@ -1,0 +1,34 @@
+{
+    "header": {
+      "movies": "Films",
+      "series": "Séries",
+      "signup": "Inscription"
+    },
+    "popular": {
+      "title": "Films les plus populaires"
+    },
+    "genres": {
+      "title": "Parcourir par genre"
+    },
+    "search": {
+      "movieTitle": "Movies",
+      "tvTitle": "Series"
+    },
+    "similar": {
+      "title": "Films similaires"
+    },
+    "movieDetails": {
+      "originalTitle": "Titre original:",
+      "direction": "Réalisation:",
+      "screenwriter": "Scénario:",
+      "producer": "Production:",
+      "noTrailer": "Aucune bande-annonce disponible"
+    },
+    "movieCredits": {
+      "cast": "Casting"
+    },
+    "profile":{
+      "likedMovies": "Films aimés"
+    }
+  }
+  
